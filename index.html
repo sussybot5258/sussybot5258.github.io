@@ -9,7 +9,7 @@
 
     <script>
       async function getData() {
-        const response = await fetch("http://47.94.146.109:8000");
+        const response = await fetch("https://47.94.146.109");
         const data = await response.json();
         console.log(data);
         document.getElementById("response").textContent = data.message;
